@@ -1,0 +1,48 @@
+.Tools-slider{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.Tools-logo-section {
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+    height: 130px;
+    width: 100%;
+    padding-bottom: 12px;
+    white-space: nowrap;
+}
+.Tools-logo-slider{
+    display: inline-block;
+    animation: moveRightToLeft 30s linear infinite;
+}
+.Tools-logo-slider2{
+    display: inline-block;
+    animation: moveLeftToRight 30s linear infinite;
+}
+.Tools-logo-slider3{
+    display: inline-block;
+    animation: moveRightToLeft 30s linear infinite;
+}
+
+.Tools-logo {
+    width: 60px;
+    height: 60px;
+    margin-left:70px;
+}
+
+@keyframes moveRightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes moveLeftToRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}

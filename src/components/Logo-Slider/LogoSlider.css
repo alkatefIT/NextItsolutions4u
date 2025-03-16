@@ -1,0 +1,34 @@
+/* LogoSection.css */
+.logo-section {
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    padding-bottom: 12px;
+    background-color: #1d3666;
+    white-space: nowrap;
+
+}
+.logo-slider{
+    display: inline-block;
+    animation: moveRightToLeft 20s linear infinite;
+}
+
+.logo {
+    width: 200px;
+    height: 80px;
+    margin-left:30px;
+
+}
+
+@keyframes moveRightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+

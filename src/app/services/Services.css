@@ -1,0 +1,120 @@
+/* service contents */
+.service-page-title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-page-contents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ///////////////////////////////// */
+.form-services{
+    display: flex;
+    justify-content:center;
+    gap:50px;
+    padding-inline: 20%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.form-card , .form-card2{
+    display: flex;
+    flex-direction: column;
+    padding:5%;
+    width: 400px;
+    height: 430px;
+    background-color:#f15c34;
+    border-radius: 10px;
+    position: sticky;
+    top: 5%;
+}
+.form-card input ,.form-card2 input{
+    background-color:#ffffff;
+    border-color: rgba(255, 255, 255, 0.315);
+    color: rgb(0, 0, 0);
+    padding: 5%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+}
+.form-card input::placeholder , .form-card2 input::placeholder{
+    color:rgba(0, 0, 0, 0.523);
+}
+.form-card button , .form-card2 button{
+    background-color: white;
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+}
+.form-card button:hover , .form-card2 button:hover{
+    color: white;
+    border: 1px solid  white;
+}
+.form-card2{
+    display: none;
+}
+.service-link-points h3{
+    font-weight: 700;
+}
+.service-link-points{
+    height: 50px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.service-link-points .custom-right-arrow-icon{
+    font-size: 35px;
+    transform: rotate(-45deg);
+    transition: transform 0.4s ease;
+}
+.services-link a{
+    text-decoration: none;
+    color: inherit;
+}
+.service-link-points:hover{
+    color: #f15c34;
+}
+.service-link-points:hover  .custom-right-arrow-icon{
+    transform: rotate(0deg);
+    color: #f15c34;
+}
+@media screen and (max-width:1000px){
+    .form-services{
+        flex-direction: column;
+        padding-inline: 50px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .form-card{
+        display: none;
+    }
+    .form-card2{
+        display: block;
+    }
+    .form-card , .form-card2{
+        position: relative;
+        width: 100%;
+        height: auto;
+
+    }
+    .form-card input , .form-card2 input{
+        width: 90%;
+        height: 55px;
+    }
+    .form-card button ,.form-card2 button{
+        width: 150px;
+        height: 55px;
+    }
+    .service-link-points{
+        height: 50px;
+        width: 100%;
+    }
+    .service-link-points h3{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+}
