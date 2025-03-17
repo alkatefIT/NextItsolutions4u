@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import "./Home2.css";
@@ -26,6 +25,7 @@ import LogoSection from "@/components/Logo-Slider/LogoSlider";
 import WhychooseBox from "@/components/Why-Choose-Box/WhyChooseBox";
 import Footer from "@/components/Footer/Footer";
 
+
 const HomeView = () => {
   const router = useRouter();
 
@@ -36,6 +36,9 @@ const HomeView = () => {
   const handleServices = () => {
     router.push("/services"); // Redirect to Services Page
   };
+
+
+  
 
   return (
     <div>
