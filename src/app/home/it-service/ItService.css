@@ -1,0 +1,26 @@
+.it-service-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+
+}
+
+.it-service-content{
+    padding-top: 60px;
+    padding-left: 20px;
+}
+.it-service-img img{
+    width: 100%;
+}
+
+
+@media (max-width:991px) {
+    .it-service-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px;
+    }
+
+}

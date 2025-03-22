@@ -1,0 +1,66 @@
+.all-service-points{
+    padding-inline:100px
+}
+.services-points{
+    width: 300px;
+    height: 300px;
+    border: 1px  solid black;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    text-align: center;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+}
+.services-points button{
+    width: 150px;
+    display: none;
+}
+.services-points h4{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.services-points:hover h4{
+    display: none;
+}
+.services-points:hover button{
+    display: block;
+}
+ .i1{
+    background-image: url('../../assets/Cloud-computing.webp');
+    background-size: cover;
+}
+ .i2{
+    background-image: url('../../assets/cyber-security.webp');
+    background-size: cover;
+}
+ .i3{
+    background-image: url('../../assets/network-infra.webp');
+    background-size: cover;
+}
+ .i4{
+    background-image: url('../../assets/software-dev.webp');
+    background-size: cover;
+}
+ .i5{
+    background-image: url('../../assets/data-management.webp');
+    background-size: cover;
+}
+ .i6{
+    background-image: url('../../assets/business-intelligence.webp');
+    background-size: cover;
+}
+ .i7{
+    background-image: url('../../assets/it-consulting.webp');
+    background-size: cover;
+}
+@media (max-width:991px) {
+    .all-service-points{
+        padding-inline:0px
+    }
+}
