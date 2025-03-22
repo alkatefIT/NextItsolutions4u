@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://next-itsolutions4u.vercel.app/
+
+# Sitemaps
+Sitemap: https://next-itsolutions4u.vercel.app/sitemap.xml
