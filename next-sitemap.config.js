@@ -6,7 +6,7 @@ module.exports = {
     exclude: ["/admin", "/dashboard"], // Exclude pages if needed
     changefreq: "daily",
     priority: 0.8,
-    generateIndexSitemap: true, // 🚀 Disables index sitemap, merges into one file
+    generateIndexSitemap: false, // 🚀 Disables index sitemap, merges into one file
 
   };
   
