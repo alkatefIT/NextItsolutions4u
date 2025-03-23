@@ -1,19 +1,26 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-      images: {
-        remotePatterns: [
-          {
-            protocol: 'https',
-            hostname: 'businessfirms.co',
-          },
-          {
-            protocol: 'https',
-            hostname: 'www.itsolutions4u.co',
-          },
-        ],
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'businessfirms.co',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.itsolutions4u.co',
+      },
+    ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/sitemap.xml",
+        destination: "/public/sitemap.xml",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
- 
-  
