@@ -1,0 +1,32 @@
+.cloud-computing-container h2{
+    font-size: 25px;
+}
+.cloud-solutions{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.solutions-box{
+    width:46%;
+}
+.agency-content-img{
+    display: flex;
+    justify-content: center;
+}
+.agency-content-img img{
+width: 65%;
+height: auto;
+}
+@media screen and (max-width:991px) {
+    .cloud-solutions{
+        gap: 0px;
+    }
+    .solutions-box{
+        width:100%;
+    }
+    .bb{
+        display: none;
+    }
+}

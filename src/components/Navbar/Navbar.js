@@ -4,10 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import "./Navbar.css";
 import Logo from "../../assets/logo_black.png";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import { useEffect } from "react";
 
 const Navbar = () => {
+
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js"); // Import Bootstrap JS only on client
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container responsive-container">
@@ -62,13 +67,19 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
-          <Link
+
+
+          {/* /////////// Links To GET In Sitemap /////////////// */}
+          {/* <Link
             className="nav-link text-dark"
             href="/services/it-service"
             style={{ display: "none" }}
           >
             Blog
-          </Link>
+          </Link> */}
+
+          {/* /////////// //////////////////////// /////////////// */}
+
         </div>
       </div>
     </nav>

@@ -63,7 +63,7 @@ const ItService = () => {
       </div>
 
       <div className="all-service-points d-flex justify-content-center flex-wrap gap-3 mt-5">
-        <ItServiceBox cname="i1"  title='Cloud Computing' btn='View' redirect={'/cloud-computing'}/>
+        <ItServiceBox cname="i1"  title='Cloud Computing' btn='View' redirect={'it-service/cloud-computing'}/>
             <ItServiceBox cname="i2" title='Cybersecurity' btn='View' redirect={'/cybersecurity'}/>
             <ItServiceBox cname="i3" title='Network Infrastructure' redirect={'/network-infrastructure'} btn='View'/>
             <ItServiceBox cname="i4" title='Software Development' redirect={'/software-development'} btn='View'/>

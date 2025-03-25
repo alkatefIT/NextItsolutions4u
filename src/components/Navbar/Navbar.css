@@ -2,6 +2,9 @@
   background-color: white;
   padding: 15px 0;
 }
+.nav-wrap{
+  flex-wrap: nowrap !important;
+}
 
 .navbar-nav-home .nav-link {
   font-weight: 500;
@@ -28,5 +31,8 @@
 @media (max-width: 991px) {
   .responsive-container {
     padding-inline: 30px;
+  }
+  .responsive-container {
+    padding-inline: 30px !important
   }
 }
