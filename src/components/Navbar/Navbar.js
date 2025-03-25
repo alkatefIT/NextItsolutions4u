@@ -64,7 +64,7 @@ const Navbar = () => {
           </Link>
           <Link
             className="nav-link text-dark"
-            href="/services/it-services"
+            href="/services/it-service"
             style={{ display: "none" }}
           >
             Blog
