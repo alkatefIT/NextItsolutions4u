@@ -133,7 +133,7 @@ const HomeView = () => {
               img={IT}
               title="IT Service"
               alttxt="IT Service"
-              redirect="/home/it-service"
+              redirect="/services/it-service"
               desc="We offer a wide range of IT services in order to meet your customized requirements (IT products and services)."
             />
             <ServicesBox
