@@ -72,7 +72,7 @@ const Navbar = () => {
           {/* /////////// Links To GET In Sitemap /////////////// */}
           <div style={{ display: "none" }}>
           <Link className="nav-link text-dark" href="/services/it-service" >it-service</Link>
-          <Link className="nav-link text-dark" href="/services/it-service/cybersecurity" >cybersecurity</Link>
+          <Link className="nav-link text-dark" href="/services/it-service/cyber-security" >cybersecurity</Link>
           <Link className="nav-link text-dark" href="/services/it-service/cloud-computing" >cloud-computing</Link>
           <Link className="nav-link text-dark" href="/services/it-service/network-infrastructure" >network-infrastructure</Link>
           <Link className="nav-link text-dark" href="/services/it-service/software-development" >software-development</Link>
