@@ -1,12 +1,10 @@
 import React from "react";
 import "./ItService.css";
 // import Whatsapp from '../components/Whatsapp'
-// import NavigationBar from '../components/Navbar'
 import { Button } from "react-bootstrap";
 import IT from "../../../assets/it-service.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-// import ItServiceBox from "./ItServiceBox";
 import ItServiceBox from "@/components/IT-Service-Box/ItServiceBox";
 
 const ItService = () => {
@@ -19,7 +17,6 @@ const ItService = () => {
   return (
     <div>
       {/* <Whatsapp/> */}
-      {/* <NavigationBar/> */}
 
       <div className="container mt-4">
         <h1>
