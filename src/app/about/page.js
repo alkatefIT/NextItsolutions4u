@@ -8,6 +8,10 @@ export const metadata = {
   alternates: {
     canonical: "https://www.itsolutions4u.co/about",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Page() {
