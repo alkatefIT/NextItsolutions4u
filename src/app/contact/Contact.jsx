@@ -34,8 +34,7 @@ export default function Contact() {
       setShowModal(true);
       form.current.reset();
     } catch (error) {
-      console.error("Email send failed:", error);
-    }
+      console.error("Email send failed:", error.message || error);    }
   };
 
   const handleCloseModal = () => setShowModal(false);

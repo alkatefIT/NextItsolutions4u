@@ -64,12 +64,12 @@ const ItService = () => {
 
       <div className="all-service-points d-flex justify-content-center flex-wrap gap-3 mt-5">
         <ItServiceBox cname="i1"  title='Cloud Computing' btn='View' redirect={'it-service/cloud-computing'}/>
-            <ItServiceBox cname="i2" title='Cybersecurity' btn='View' redirect={'/cybersecurity'}/>
-            <ItServiceBox cname="i3" title='Network Infrastructure' redirect={'/network-infrastructure'} btn='View'/>
-            <ItServiceBox cname="i4" title='Software Development' redirect={'/software-development'} btn='View'/>
-            <ItServiceBox cname="i5" title='Data Management' redirect={'/data-management'} btn='View'/>
-            <ItServiceBox cname="i6" title='Business Intelligence ' redirect={'/business-intelligence'} btn='View'/>
-            <ItServiceBox cname="i7"title='IT Consulting' redirect={'/it-consulting'} btn='View'/>
+            <ItServiceBox cname="i2" title='Cybersecurity' btn='View' redirect={'it-service/cyber-security'}/>
+            <ItServiceBox cname="i3" title='Network Infrastructure' redirect={'it-service/network-infrastructure'} btn='View'/>
+            <ItServiceBox cname="i4" title='Software Development' redirect={'it-service/software-development'} btn='View'/>
+            <ItServiceBox cname="i5" title='Data Management' redirect={'it-service/data-management'} btn='View'/>
+            <ItServiceBox cname="i6" title='Business Intelligence ' redirect={'it-service/business-intelligence'} btn='View'/>
+            <ItServiceBox cname="i7"title='IT Consulting' redirect={'it-service/it-consulting'} btn='View'/>
       
       </div>
     </div>

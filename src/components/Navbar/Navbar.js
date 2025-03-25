@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container responsive-container">
         <Link className="navbar-brand" href="/">
-          <Image src={Logo} alt="Logo" className="main-logo" width={220} />
+          <Image src={Logo} alt="Logo" className="main-logo"/>
         </Link>
         <button
           className="navbar-toggler"
@@ -63,7 +63,7 @@ const Navbar = () => {
           </ul>
           <Link
             href="/contact"
-            className="btn btn-danger rounded-pill ms-2 px-3 py-2"
+            className="btn btn-danger nav-contact rounded-pill"
           >
             Contact Us
           </Link>

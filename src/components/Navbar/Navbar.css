@@ -2,8 +2,15 @@
   background-color: white;
   padding: 15px 0;
 }
-.nav-wrap{
+
+.nav-wrap {
   flex-wrap: nowrap !important;
+}
+
+.navbar-brand img {
+  width: 230px;
+  height: auto;
+
 }
 
 .navbar-nav-home .nav-link {
@@ -13,15 +20,7 @@
 }
 
 .nav-contact {
-  background-color: #f15c34;;
-  color: white;
-  border: none;
-  padding: 8px 20px;
-  transition: 0.3s ease-in-out;
-}
-
-.nav-contact:hover {
-  background-color: #e64a19;
+  margin-inline-start: 25px !important;
 }
 
 .responsive-container {
@@ -29,10 +28,24 @@
 }
 
 @media (max-width: 991px) {
-  .responsive-container {
-    padding-inline: 30px;
+  .navbar-brand img {
+    width: 150px;
+    height: auto;
+
   }
+
   .responsive-container {
     padding-inline: 30px !important
+  }
+
+  .nav-contact {
+    margin-inline-start: 0px !important;
+    margin-block-start: 30px !important;
+
+  }
+
+  .navbar-nav {
+
+    line-height: 1px !important;
   }
 }

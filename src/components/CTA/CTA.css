@@ -1,0 +1,19 @@
+.CTA button{
+    width: 170px;
+    height: 50px;
+}
+.cta-top{
+    margin-top: 50px;
+}
+.call{
+    display: none;
+}
+@media screen and (max-width:786px) {
+    .call{
+        display: block;
+    }
+    .cntct{
+        display: none;
+    }
+    
+}

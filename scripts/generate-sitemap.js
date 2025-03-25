@@ -12,6 +12,13 @@ const staticPages = [
   { path: "/blogs", priority: "0.80" },
   { path: "/contact", priority: "0.80" },
   { path: "/services/it-service", priority: "0.80" },
+  { path: "/services/it-service/cybersecurity", priority: "0.75" },
+  { path: "/services/it-service/cloud-computing", priority: "0.75" },
+  { path: "/services/it-service/network-infrastructure", priority: "0.75" },
+  { path: "/services/it-service/software-development", priority: "0.75" },
+  { path: "/services/it-service/data-management", priority: "0.75" },
+  { path: "/services/it-service/business-intelligence", priority: "0.75" },
+  { path: "/services/it-service/it-consulting", priority: "0.75" },
 ];
 
 const urls = staticPages

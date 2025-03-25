@@ -71,8 +71,6 @@ const HomeView = () => {
                   className="mt-5"
                   src={front}
                   alt="Digital marketing agency in Dubai"
-                  width={500}
-                  height={400}
                 />
               </div>
 
@@ -107,8 +105,6 @@ const HomeView = () => {
               className="mt-5"
               src={front}
               alt="Digital marketing agency in Dubai"
-              width={500}
-              height={400}
             />
           </div>
         </div>
