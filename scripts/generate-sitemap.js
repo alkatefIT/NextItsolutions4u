@@ -4,12 +4,12 @@ const baseUrl = "https://next-itsolutions4u.vercel.app";
 // List all your static pages
 const staticPages = [
   "/",
-  "/home/it-service",
   "/about",
   "/blogs",
   "/contact",
   "/products",
   "/services",
+  "/services/it-service", // Ensure this is included
 ];
 
 const urls = staticPages
