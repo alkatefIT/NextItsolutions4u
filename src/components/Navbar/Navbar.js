@@ -70,14 +70,16 @@ const Navbar = () => {
 
 
           {/* /////////// Links To GET In Sitemap /////////////// */}
-          {/* <Link
-            className="nav-link text-dark"
-            href="/services/it-service"
-            style={{ display: "none" }}
-          >
-            Blog
-          </Link> */}
-
+          <div style={{ display: "none" }}>
+          <Link className="nav-link text-dark" href="/services/it-service" >it-service</Link>
+          <Link className="nav-link text-dark" href="/services/it-service/cybersecurity" >cybersecurity</Link>
+          <Link className="nav-link text-dark" href="/services/it-service/cloud-computing" >cloud-computing</Link>
+          <Link className="nav-link text-dark" href="/services/it-service/network-infrastructure" >network-infrastructure</Link>
+          <Link className="nav-link text-dark" href="/services/it-service/software-development" >software-development</Link>
+          <Link className="nav-link text-dark" href="/services/it-service/data-management" >data-management</Link>
+          <Link className="nav-link text-dark" href="/services/it-service/business-intelligence" >business-intelligence</Link>
+          <Link className="nav-link text-dark" href="/services/it-service/it-consulting" >it-consulting</Link>
+          </div>
           {/* /////////// //////////////////////// /////////////// */}
 
         </div>
