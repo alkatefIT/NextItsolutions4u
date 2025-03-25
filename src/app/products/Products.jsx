@@ -17,8 +17,6 @@ import Plotter from "../../assets/plotter.jpg";
 import Laptop from "../../assets/Laptop.jpg";
 import Panel from "../../assets/Biometrics.jpg";
 import Telecom from "../../assets/pabx.jpg";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 import ProductCategory from "@/components/Product-Category/ProductCategory";
 
 
@@ -29,8 +27,6 @@ export default function Products() {
   return (
     <div>
       {/* <Whatsapp premsg="Hi, I'm interested in your products. Can you provide more details about the available products?" /> */}
-      <Navbar/>
-
       <div className="product-top-container">
         <div className="product-top-img-container">
           <div className="product-top-grey">
@@ -65,8 +61,6 @@ export default function Products() {
         <ProductCategory productName="Digital Panel" productImage={Panel} productLink="/products" />
         <ProductCategory productName="Telecom" productImage={Telecom} productLink="/products" />
       </div>
-
-        <Footer />
     </div>
   );
 }

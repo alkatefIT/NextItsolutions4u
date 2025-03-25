@@ -7,8 +7,6 @@ import IT from "../../../assets/it-service.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 // import ItServiceBox from "./ItServiceBox";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 import ItServiceBox from "@/components/IT-Service-Box/ItServiceBox";
 
 const ItService = () => {
@@ -22,7 +20,6 @@ const ItService = () => {
     <div>
       {/* <Whatsapp/> */}
       {/* <NavigationBar/> */}
-      <Navbar />
 
       <div className="container mt-4">
         <h1>
@@ -78,10 +75,6 @@ const ItService = () => {
             <ItServiceBox cname="i7"title='IT Consulting' redirect={'/it-consulting'} btn='View'/>
       
       </div>
-
-      <section className="footer-section">
-        <Footer />
-      </section>
     </div>
   );
 };

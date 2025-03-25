@@ -6,8 +6,6 @@ import "./Contact.css";
 import emailjs from "@emailjs/browser";
 // import Whatsapp from "../components/Whatsapp";
 import { usePathname } from "next/navigation";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 import ThanksNote from "@/components/Thanks-Note/ThanksNote";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -53,8 +51,6 @@ export default function Contact() {
   return (
     <div>
       {/* <Whatsapp /> */}
-      <Navbar />
-
       <div className="contact-contents">
         <h2 className="text-center mt-5 mb-5">Get in touch with us 👋</h2>
 
@@ -162,8 +158,6 @@ export default function Contact() {
           </div>
         </Container>
       </div>
-
-      <Footer />
     </div>
   );
 }

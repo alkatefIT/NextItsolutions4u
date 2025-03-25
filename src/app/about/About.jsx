@@ -7,8 +7,6 @@ import Trouble from "../../assets/ser_rot_trouble.webp";
 import Netwrkimg from "../../assets/ser_rot_network.webp";
 import Photocpy from "../../assets/ser_rot_trouble_photocpy.webp";
 import Telecom from "../../assets/ser_rot_telecom.webp";
-import Footer from "../../components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
 // import Whatsapp from "../components/Whatsapp";
 
 export default function About() {
@@ -16,9 +14,6 @@ export default function About() {
   return (
     <div>
       {/* <Whatsapp premsg="Hi, I visited your About page and would like to learn more about your services." /> */}
-
-      <Navbar />
-
       <div className="about-page-container">
         <div className="about-page-top">
           <div className="about-page-top-img">
@@ -146,10 +141,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      <section className="footer-section">
-        <Footer />
-      </section>
     </div>
   );
 }

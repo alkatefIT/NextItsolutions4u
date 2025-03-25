@@ -4,8 +4,6 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation"; // Fix for App Router
 import "./Blogs.css";
 import Blog1 from "../../assets/blog_1.jpg";
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
 // import Whatsapp from "../components/Whatsapp";
 
 
@@ -17,9 +15,6 @@ export default function Blogs() {
   return (
     <div>
       {/* <Whatsapp /> */}
-
-      <Navbar />
-
       <div className="blog-page-conatiner">
         <div className="blog-page-top">
           <h1>
@@ -65,7 +60,6 @@ export default function Blogs() {
       </div>
 
       <section className="footer-section">
-        <Footer />
       </section>
     </div>
   );

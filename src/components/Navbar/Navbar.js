@@ -4,15 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import "./Navbar.css"
 import Logo from "../../assets/logo_black.png";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
-import { useEffect } from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const Navbar = () => {
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">

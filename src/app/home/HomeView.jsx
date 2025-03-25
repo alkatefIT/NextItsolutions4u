@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import "./Home2.css";
-import Navbar from "@/components/Navbar/Navbar";
 import front from "../../assets/front.webp";
 import IT from "../../assets/IT.svg";
 import q from "../../assets/q.svg";
@@ -23,7 +22,6 @@ import { useRouter } from "next/navigation";
 import ServicesBox from "@/components/Service Box/ServicesBox";
 import LogoSection from "@/components/Logo-Slider/LogoSlider";
 import WhychooseBox from "@/components/Why-Choose-Box/WhyChooseBox";
-import Footer from "@/components/Footer/Footer";
 
 
 const HomeView = () => {
@@ -42,8 +40,6 @@ const HomeView = () => {
 
   return (
     <div>
-      <Navbar />
-
       <section className="container home-section ">
         <div className="main-home">
           {/* Left Section */}
@@ -251,7 +247,6 @@ const HomeView = () => {
           />
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

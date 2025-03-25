@@ -5,8 +5,6 @@ import Link from "next/link";
 import emailjs from "@emailjs/browser";
 // import Whatsapp from "@/components/Whatsapp";
 import "./Services.css";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ToolsLogoSlider from "@/components/Tools-Logo-Slider/ToolsLogoSlider";
@@ -38,9 +36,6 @@ export default function Services() {
   return (
     <div className="service-page-container">
       {/* <Whatsapp premsg="Hi, I'm interested in learning more about your services" /> */}
-
-      <Navbar />
-
       <div className="service-page-title">
         <h1 id="service-section">
           <span className="title-blue">Our</span>{" "}
@@ -171,9 +166,6 @@ export default function Services() {
 
       <ToolsLogoSlider />
 
-      <section className="footer-section">
-        <Footer />
-      </section>
     </div>
   );
 }
