@@ -70,49 +70,49 @@ export default function Services() {
 
         {/* Service Links */}
         <div className="services-link">
-          <Link href="/it-service">
+          <Link href="services/it-service">
             <div className="service-link-points border-bottom mb-5">
               <h3>IT Support</h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
             </div>
           </Link>
 
-          <Link href="/rental-service">
+          <Link href="services/rental-service">
             <div className="service-link-points border-bottom mb-5">
               <h3>Rental Service</h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
             </div>
           </Link>
 
-          <Link href="/amc">
+          <Link href="services/annual-maintenance-contract">
             <div className="service-link-points border-bottom mb-5">
               <h3>AMC</h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
             </div>
           </Link>
 
-          <Link href="/telecom-solutions">
+          <Link href="services/telecom-solutions">
             <div className="service-link-points border-bottom mb-5">
               <h3>Telecom Solutions</h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
             </div>
           </Link>
 
-          <Link href="/network-solutions">
+          <Link href="services/network-solutions">
             <div className="service-link-points border-bottom mb-5">
               <h3>Network Solutions</h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
             </div>
           </Link>
 
-          <Link href="/digital-marketing">
+          <Link href="services/digital-marketing">
             <div className="service-link-points border-bottom mb-5">
               <h3>Digital Marketing </h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
             </div>
           </Link>
 
-          <Link href="/cctv">
+          <Link href="services/cctv">
             <div className="service-link-points border-bottom mb-5">
               <h3>CCTV</h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
