@@ -136,20 +136,20 @@ const HomeView = () => {
               img={q}
               title="Rental Service"
               alttxt="Rental Service"
-              redirect="/rental-service"
+              redirect="services/rental-service"
               desc="Streamline your life with our effortless rental service, providing access to premium products without the long-term commitment"
             />
             <ServicesBox
               img={questionImg}
               title="Digital Marketing"
               alttxt="Digital Marketing"
-              redirect="/digital-marketing"
+              redirect="services/digital-marketing"
               desc="Digital marketing is an essential part of many businesses marketing strategies, as it allows them to reach a larger audience"
             />
             <ServicesBox
               img={Telecom}
               title="Telecom Solutions"
-              redirect="/telecom-solutions"
+              redirect="services/telecom-solutions"
               alttxt="Telecom Solutions"
               desc="Optimize your work environment with our server solutions. Improve connectivity, data management, and performance."
             />
@@ -157,7 +157,7 @@ const HomeView = () => {
               img={Maintenance}
               title="AMC"
               alttxt="AMC"
-              redirect="/amc"
+              redirect="services/annual-maintenance-contract"
               desc="We provide a yearly contract for printer /photocopier maintenance and repairs to streamline client operations."
             />
             <ServicesBox
@@ -169,7 +169,7 @@ const HomeView = () => {
             <ServicesBox
               img={network}
               title="Network Solutions"
-              redirect="/network-solutions"
+              redirect="services/network-solutions"
               alttxt="Network solutions"
               desc="We provide a multitude of products, all of which aims to run your business with ease and highest efficiency."
             />
@@ -182,7 +182,7 @@ const HomeView = () => {
             <ServicesBox
               img={Websoln}
               title="CCTV"
-              redirect="/cctv"
+              redirect="services/cctv"
               alttxt="cctv"
               desc="Enhance security with our state-of-the-art CCTV solutions, providing vigilant surveillance for peace of mind in every corner."
             />

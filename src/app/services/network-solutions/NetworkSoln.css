@@ -1,0 +1,43 @@
+.rental-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.benefits{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.benefits-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+}
+.printers-type{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.printers-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45%;
+
+}
+@media screen and (max-width:991px) {
+    .benefits,.printers-type{
+        gap: 0;
+    }
+    
+    .benefits-box,.printers-box{
+
+        width: 100%;
+    }
+
+}

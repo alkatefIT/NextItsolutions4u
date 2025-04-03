@@ -1,0 +1,46 @@
+/* --------- digital marketing page card starts --------- */
+.digi-mrkt-bottom-card{
+    width: 350px;
+    /* height: 410px; */
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-top: 18px;
+}
+
+.digi-mrkt-bottom-card img{
+    width: 320px;
+    height: 200px;
+}
+
+.digi-mrkt-bottom-card h3{
+    text-align: left;
+    font-size: 20px;
+}
+
+.digi-mrkt-bottom-card p{
+    font-size: 14px;
+}
+.digi-mrkt-bottom-card-container a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/* media queries */
+@media (max-width: 1160px){
+    .digi-mrkt-bottom-card{
+        width: 250px;
+    }
+
+    .digi-mrkt-bottom-card img{
+        width: 220px;
+        height: 100px;
+    }
+
+    .digi-mrkt-bottom-card h3{
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+/* --------- digital marketing page card ends --------- */

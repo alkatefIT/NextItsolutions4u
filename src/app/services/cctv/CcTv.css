@@ -1,0 +1,16 @@
+.cctv-service{
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    gap:20px;
+    flex-wrap: wrap;
+}
+.cctv-service p{
+    width: 260px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.cctv-service p:hover{
+    background-color: #ffeae5;
+}
