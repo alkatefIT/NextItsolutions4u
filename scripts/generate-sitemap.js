@@ -19,6 +19,15 @@ const staticPages = [
   { path: "/services/it-service/data-management", priority: "0.75" },
   { path: "/services/it-service/business-intelligence", priority: "0.75" },
   { path: "/services/it-service/it-consulting", priority: "0.75" },
+  { path: "/services/rental-service", priority: "0.80" },
+  { path: "/services/digital-marketing", priority: "0.80" },
+  { path: "/services/telecom-solutions", priority: "0.80" },
+  { path: "/services/annual-maintenance-contract", priority: "0.80" },
+  { path: "/services/network-solutions", priority: "0.80" },
+  { path: "/services/website-development", priority: "0.80" },
+  { path: "/services/app-development", priority: "0.80" },
+  { path: "/services/branding", priority: "0.80" },
+
 ];
 
 const urls = staticPages

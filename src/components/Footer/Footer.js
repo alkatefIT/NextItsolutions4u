@@ -104,7 +104,7 @@ function Footer() {
         <div className="footer-links-section">
           <p className="footer-section-title">USEFUL LINKS</p>
           <div className="footer-links-flex">
-            <Link href="/certificate" className="footer-links-flex-link">
+            <Link href="/certificates" className="footer-links-flex-link">
               Certificate
             </Link>
             <Link

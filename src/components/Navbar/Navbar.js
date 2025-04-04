@@ -79,6 +79,14 @@ const Navbar = () => {
           <Link className="nav-link text-dark" href="/services/it-service/data-management" >data-management</Link>
           <Link className="nav-link text-dark" href="/services/it-service/business-intelligence" >business-intelligence</Link>
           <Link className="nav-link text-dark" href="/services/it-service/it-consulting" >it-consulting</Link>
+          <Link className="nav-link text-dark" href="/services/rental-service" >rental-service</Link>
+          <Link className="nav-link text-dark" href="/services/digital-marketing" >digital-marketing</Link>
+          <Link className="nav-link text-dark" href="/services/telecom-solutions" >telecom-solutions</Link>
+          <Link className="nav-link text-dark" href="/services/annual-maintenance-contract" >annual-maintenance-contract</Link>
+          <Link className="nav-link text-dark" href="/services/network-solutions" >network-solutions</Link>
+          <Link className="nav-link text-dark" href="/services/website-development" >website-development</Link>
+          <Link className="nav-link text-dark" href="/services/app-development" >app-development</Link>
+          <Link className="nav-link text-dark" href="/services/branding" >branding</Link>
           </div>
           {/* /////////// //////////////////////// /////////////// */}
 

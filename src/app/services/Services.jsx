@@ -119,21 +119,21 @@ export default function Services() {
             </div>
           </Link>
 
-          <Link href="/website-development">
+          <Link href="services/website-development">
             <div className="service-link-points border-bottom mb-5">
               <h3> Website Development </h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
             </div>
           </Link>
 
-          <Link href="/app-development">
+          <Link href="services/app-development">
             <div className="service-link-points border-bottom  mb-5">
               <h3>App Development </h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
             </div>
           </Link>
 
-          <Link href="/branding">
+          <Link href="services/branding">
             <div className="service-link-points border-bottom">
               <h3>Branding </h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
