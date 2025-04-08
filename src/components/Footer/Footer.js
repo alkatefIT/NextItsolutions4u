@@ -11,7 +11,6 @@ import {
   faEnvelope,
   faHouse,
   faPhone,
-  faTextWidth,
   faTty,
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -31,60 +30,37 @@ function Footer() {
       <hr />
       <div className="footer-cover">
         <div className="footer-logo-section">
-          <Image src={LogoDark} alt="error" width={150} height={50} />
+          <div style={{ width: 150, height: 50, marginBottom:20 }}>
+            <Image
+              src={LogoDark}
+              alt="Company Logo"
+              width={150}
+              height={50}
+              priority
+            />
+          </div>
           <p>
-            Al Katef IT Solutions is a global IT solutions company based UAE,
-            with over 20 years experience in IT service, printer service,
-            digital marketing.
+            Al Katef IT Solutions is a global IT solutions company based in the
+            UAE, with over 20 years experience in IT service, printer service,
+            and digital marketing.
           </p>
-          <div className="soc-med-i d-flex justify-content-between  fs-5 align-items-center">
-            <p className="icons">
-              <a
-                href="https://www.facebook.com/alkatef.uae"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-            </p>
-            <p className="icons">
-              <a
-                href="https://www.instagram.com/alkatef.uae/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-            </p>
-            <p className="icons">
-              <a
-                href="https://www.linkedin.com/company/alkatefuae/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </p>
-            <p className="icons">
-              <a
-                href="https://www.youtube.com/@alkatefuae"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
-            </p>
-            <p className="icons">
-              <a
-                href="https://twitter.com/alkatef_uae"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faXTwitter} />
-              </a>
-            </p>
+          <div className="soc-med-i d-flex justify-content-between fs-5 align-items-center">
+            {[
+              { icon: faFacebook, link: "https://www.facebook.com/alkatef.uae" },
+              { icon: faInstagram, link: "https://www.instagram.com/alkatef.uae/" },
+              { icon: faLinkedin, link: "https://www.linkedin.com/company/alkatefuae/" },
+              { icon: faYoutube, link: "https://www.youtube.com/@alkatefuae" },
+              { icon: faXTwitter, link: "https://twitter.com/alkatef_uae" },
+            ].map((item, idx) => (
+              <p className="icons" key={idx}>
+                <a href={item.link} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={item.icon} fixedWidth />
+                </a>
+              </p>
+            ))}
           </div>
         </div>
+
         <div className="footer-product-section">
           <p className="footer-section-title">PRODUCTS</p>
           <div className="footer-links-flex">
@@ -112,16 +88,14 @@ function Footer() {
             </Link>
           </div>
         </div>
+
         <div className="footer-links-section">
           <p className="footer-section-title">USEFUL LINKS</p>
           <div className="footer-links-flex">
             <Link href="/certificates" className="footer-links-flex-link">
               Certificate
             </Link>
-            <Link
-              href="/terms-and-conditions"
-              className="footer-links-flex-link"
-            >
+            <Link href="/terms-and-conditions" className="footer-links-flex-link">
               T&Cs
             </Link>
             <Link href="#" className="footer-links-flex-link">
@@ -135,33 +109,43 @@ function Footer() {
             </Link>
           </div>
         </div>
+
         <div className="footer-contact-section">
           <p className="footer-section-title">CONTACT US</p>
           <div className="footer-section-contact">
-            <FontAwesomeIcon icon={faHouse} style={{ color: "black" }} /> M-25
-            Mussafah, Abu Dhabi, UAE
+            <FontAwesomeIcon icon={faHouse} style={{ color: "black" }} fixedWidth />{" "}
+            M-25 Mussafah, Abu Dhabi, UAE
           </div>
           <div className="footer-section-contact">
-            <FontAwesomeIcon icon={faEnvelope} style={{ color: "black" }} />{" "}
+            <FontAwesomeIcon icon={faEnvelope} style={{ color: "black" }} fixedWidth />{" "}
             sales@itsolutions4u.co
           </div>
           <div className="footer-section-contact">
-            <FontAwesomeIcon icon={faPhone} style={{ color: "black" }} /> +971
-            55 644 9916
+            <FontAwesomeIcon icon={faPhone} style={{ color: "black" }} fixedWidth />{" "}
+            +971 55 644 9916
           </div>
           <div className="footer-section-contact">
-            <FontAwesomeIcon icon={faTty} style={{ color: "black" }} /> +971 2
-            552 4336
+            <FontAwesomeIcon icon={faTty} style={{ color: "black" }} fixedWidth />{" "}
+            +971 2 552 4336
           </div>
-          <Image src={PayCard} alt="ERR" width={150} height={50} />
+          <div style={{ width: 150, height: 50, marginTop: "0.5rem" }}>
+            <Image
+              src={PayCard}
+              alt="Payment Methods"
+              width={150}
+              height={50}
+            />
+          </div>
         </div>
       </div>
+
       <div className="footer-line-parent">
         <hr className="footer-line" />
       </div>
+
       <div className="footer-copyright-section">
         <p>
-          &copy; 2023 itsolutions4u.co All rights reserved. Designed by &nbsp;{" "}
+          &copy; 2023 itsolutions4u.co All rights reserved. Designed by{" "}
           <a
             href="https://alkatefitsolutions.com/"
             target="_blank"
