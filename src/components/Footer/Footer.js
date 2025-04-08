@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "./Footer.css";
 import LogoDark from "../../assets/logo_black.png";
@@ -22,6 +23,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+  const pathname = usePathname();
+  const isCctvPath = pathname === "/services/closed-circuit-television";
+
   return (
     <div className="footer-parent">
       <hr />
@@ -87,9 +91,16 @@ function Footer() {
             <Link href="/printer" className="footer-links-flex-link">
               Printer
             </Link>
-            <Link href="services/cctv" className="footer-links-flex-link">
-              CCTV
-            </Link>
+            {isCctvPath ? (
+              <span className="footer-links-flex-link disabled-link">CCTV</span>
+            ) : (
+              <Link
+                href="/services/closed-circuit-television"
+                className="footer-links-flex-link"
+              >
+                CCTV
+              </Link>
+            )}
             <Link href="#" className="footer-links-flex-link">
               PABX
             </Link>
@@ -127,16 +138,20 @@ function Footer() {
         <div className="footer-contact-section">
           <p className="footer-section-title">CONTACT US</p>
           <div className="footer-section-contact">
-            <FontAwesomeIcon icon={faHouse} style={{color:'black'}} /> M-25 Mussafah, Abu Dhabi, UAE
+            <FontAwesomeIcon icon={faHouse} style={{ color: "black" }} /> M-25
+            Mussafah, Abu Dhabi, UAE
           </div>
           <div className="footer-section-contact">
-            <FontAwesomeIcon icon={faEnvelope} style={{color:'black'}} /> sales@itsolutions4u.co
+            <FontAwesomeIcon icon={faEnvelope} style={{ color: "black" }} />{" "}
+            sales@itsolutions4u.co
           </div>
           <div className="footer-section-contact">
-            <FontAwesomeIcon icon={faPhone} style={{color:'black'}} /> +971 55 644 9916
+            <FontAwesomeIcon icon={faPhone} style={{ color: "black" }} /> +971
+            55 644 9916
           </div>
           <div className="footer-section-contact">
-            <FontAwesomeIcon icon={faTty} style={{color:'black'}} /> +971 2 552 4336
+            <FontAwesomeIcon icon={faTty} style={{ color: "black" }} /> +971 2
+            552 4336
           </div>
           <Image src={PayCard} alt="ERR" width={150} height={50} />
         </div>
@@ -146,13 +161,13 @@ function Footer() {
       </div>
       <div className="footer-copyright-section">
         <p>
-          &copy; 2023 itsolutions4u.co All rights reserved. Designed by
-           &nbsp; <a
+          &copy; 2023 itsolutions4u.co All rights reserved. Designed by &nbsp;{" "}
+          <a
             href="https://alkatefitsolutions.com/"
             target="_blank"
             rel="noreferrer"
           >
-          AL KATEF IT SOLUTIONS
+            AL KATEF IT SOLUTIONS
           </a>
         </p>
       </div>

@@ -182,7 +182,7 @@ const HomeView = () => {
             <ServicesBox
               img={Websoln}
               title="CCTV"
-              redirect="services/cctv"
+              redirect="services/closed-circuit-television"
               alttxt="cctv"
               desc="Enhance security with our state-of-the-art CCTV solutions, providing vigilant surveillance for peace of mind in every corner."
             />

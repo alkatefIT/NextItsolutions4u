@@ -112,7 +112,7 @@ export default function Services() {
             </div>
           </Link>
 
-          <Link href="services/cctv">
+          <Link href="services/closed-circuit-television">
             <div className="service-link-points border-bottom mb-5">
               <h3>CCTV</h3>
               <FontAwesomeIcon icon={faArrowRight} className="custom-right-arrow-icon" />{" "}
