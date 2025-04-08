@@ -2,8 +2,8 @@
 
 import dynamic from "next/dynamic";
 
-const CcTv = dynamic(() => import("./CcTv"), { ssr: false });
+const Cctv = dynamic(() => import("./Cctv"), { ssr: false });
 
-export default function CcTvPage() {
-  return <CcTv />;
+export default function CctvPage() {
+  return <Cctv />;
 }

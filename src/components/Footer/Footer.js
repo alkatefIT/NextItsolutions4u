@@ -87,7 +87,7 @@ function Footer() {
             <Link href="/printer" className="footer-links-flex-link">
               Printer
             </Link>
-            <Link href="/cctv" className="footer-links-flex-link">
+            <Link href="services/cctv" className="footer-links-flex-link">
               CCTV
             </Link>
             <Link href="#" className="footer-links-flex-link">

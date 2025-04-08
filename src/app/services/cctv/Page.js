@@ -1,4 +1,4 @@
-import CcTvPage from "./CcTvPage";
+import Cctv from "./CctvPage";
 
 // app/services/page.js
 export const metadata = {
@@ -11,5 +11,5 @@ export const metadata = {
 
 
 export default function Page() {
-  return <CcTvPage />;
+  return <Cctv />;
 }
