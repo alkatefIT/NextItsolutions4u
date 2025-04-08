@@ -48,7 +48,7 @@ const HomeView = () => {
               {["It Solutions", "Printer Service", "Digital Marketing"].map(
                 (service, index) => (
                   <span className="title-orange" key={index}>
-                    <h6 className="bg-light rounded-4 text-center mt-2 mb-3 p-3">
+                    <h6 className="bg-light-custom rounded-4 text-center mt-2 mb-3 p-3">
                       {service}
                     </h6>
                   </span>

@@ -10,23 +10,22 @@ import emailjs from "@emailjs/browser";
 const FormModal = ({ handleClose, handleShow, show }) => {
   const form = useRef(null);
 
-
-
   const sendEmail = (e) => {
     e.preventDefault();
     if (!form.current) return;
 
-    emailjs.sendForm(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      form.current,
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-    )
-    .then(() => {
-      console.log("Email sent successfully");
-      form.current.reset();
-    })
-    .catch((error) => console.error("Email sending failed", error));
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        console.log("Email sent successfully");
+        form.current.reset();
+      })
+      .catch((error) => console.error("Email sending failed", error));
   };
 
   useEffect(() => {
@@ -39,32 +38,49 @@ const FormModal = ({ handleClose, handleShow, show }) => {
 
   return (
     <div>
-      <Modal dialogClassName="custom-modal" show={show} onHide={handleClose}>
+      <Modal
+        dialogClassName="custom-modal"
+        show={show}
+        onHide={handleClose}
+        aria-label="Service Inquiry Form"
+      >
         <div className="modal-close ms-auto">
           <IoClose className="fs-3" onClick={handleClose} />
         </div>
 
-        <Modal.Title className="text-center mt-3">
+        <Modal.Title id="Service Inquiry Heading" className="text-center mt-3">
           What services are you looking for?
         </Modal.Title>
 
         <Modal.Body>
           <div className="d-flex flex-wrap justify-content-center gap-2 mt-3">
             {[
-              "IT AMC Services", "MCC Approval", "CCTV", "Biometric",
-              "Network Solutions", "PC Repairs", "Digital Marketing",
-              "SEO", "Website Design & Development", "Mobile App Development",
-              "Printer Rental", "Printer Sales", "Printer AMC",
-              "Spare Parts/Consumables"
+              "IT AMC Services",
+              "MCC Approval",
+              "CCTV",
+              "Biometric",
+              "Network Solutions",
+              "PC Repairs",
+              "Digital Marketing",
+              "SEO",
+              "Website Design & Development",
+              "Mobile App Development",
+              "Printer Rental",
+              "Printer Sales",
+              "Printer AMC",
+              "Spare Parts/Consumables",
             ].map((service, index) => (
-              <div key={index} className="modal-services">{service}</div>
+              <div key={index} className="modal-services">
+                {service}
+              </div>
             ))}
           </div>
         </Modal.Body>
 
         <Modal.Title className="text-center mt-5">
           Didn’t find what you were looking for? <br />
-          Please provide us with your contact details and we’ll be in touch shortly.
+          Please provide us with your contact details and we’ll be in touch
+          shortly.
         </Modal.Title>
 
         <Modal.Body>
@@ -82,7 +98,7 @@ const FormModal = ({ handleClose, handleShow, show }) => {
                       { label: "Last Name", name: "lastName", type: "text" },
                       { label: "Company Name", name: "company", type: "text" },
                       { label: "Email", name: "email", type: "email" },
-                      { label: "Mobile Number", name: "mobile", type: "tel" }
+                      { label: "Mobile Number", name: "mobile", type: "tel" },
                     ].map(({ label, name, type }) => (
                       <div key={name} className="input">
                         <label htmlFor={name}>{label}</label>

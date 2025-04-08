@@ -1,52 +1,63 @@
-.modal-services{
-    height: auto;
-    width: auto;
-    background-color:rgb(241,92,52);
-    color: white;
-    padding: 7px;
-    border-radius: 5px;
+.modal-services {
+  background-color: rgb(241, 92, 52);
+  color: white;
+  font-weight: 600;
+  padding: 7px;
+  border-radius: 5px;
 }
-.modal-close:hover{
-    background-color: red;
-    color: white;
-    border-top-right-radius: 5px;
-}
-.modal-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.modal-button Button{
 
-    height: 50px;
-    width: 200px;
+.modal-close:hover {
+  background-color: red;
+  color: white;
+  border-top-right-radius: 5px;
 }
-.modal{
 
-    border-radius: 0!important;
+.modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.custom-modal{
-    max-width: 50%;
+
+.modal-button Button {
+
+  height: 50px;
+  width: 200px;
 }
+
+.modal {
+
+  border-radius: 0 !important;
+}
+
+.custom-modal {
+  max-width: 50%;
+}
+
 @media screen and (max-width:991px) {
-    .custom-modal{
-        max-width: 100%;
-    }
+  .custom-modal {
+    max-width: 100%;
+  }
 }
 
 
-h2, h3, label, button {
+h2,
+h3,
+label,
+button {
   font-family: 'Lato', sans-serif;
 }
+
 form {
-  padding:20px 0 0 0;
+  padding: 20px 0 0 0;
 }
+
 label {
   display: block;
   font-size: 13px;
   letter-spacing: 1px;
   color: #000000;
 }
+
 .form-modal input {
   display: block;
   padding: 5px 0;
@@ -55,11 +66,13 @@ label {
   border-bottom: 2px solid #EDEDED;
   outline: none;
   background: transparent;
+
   &:focus {
     transition: border-color .25s;
-    border-color:#1e83ec;
+    border-color: #1e83ec;
   }
 }
+
 .form-modal textarea {
   display: block;
   padding: 5px 0;
@@ -70,8 +83,9 @@ label {
   outline: none;
   background: transparent;
   resize: none;
+
   &:focus {
     transition: border-color .25s;
-    border-color:#1e83ec;
+    border-color: #1e83ec;
   }
 }

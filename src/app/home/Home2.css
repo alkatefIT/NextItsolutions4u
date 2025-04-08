@@ -2,6 +2,10 @@
     padding-inline: 100px;
 }
 
+.bg-light-custom {
+    background-color: #f1f1f1; /* slightly darker than Bootstrap's bg-light */
+  }
+
 .main-home {
     height: auto;
     width: 100%;

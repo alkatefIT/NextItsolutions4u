@@ -110,8 +110,8 @@
   }
   
   .footer-copyright-section a {
-    text-decoration: none;
-    color: #007bff;
+    color: #0056b3; /* darker blue */
+    font-weight: 500;
   }
   
   .footer-copyright-section a:hover {
