@@ -9,6 +9,7 @@ export const metadata = {
     "UAE's Trusted IT Partner, every business for one solution in al katef",
   description:
     "Al Katef Advertising Agency is a dynamic and creative firm specializing in innovative marketing solutions.we focus on delivering impactful advertising campaigns, we are the best leading IT solutions provider in UAE",
+    keywords:"Al Katef Advertising Agency, marketing solutions, advertising campaigns, IT solutions provider in UAE, creative firm UAE, digital marketing UAE, UAE IT services",
   alternates: {
     canonical: "https://www.itsolutions4u.co",
   },
