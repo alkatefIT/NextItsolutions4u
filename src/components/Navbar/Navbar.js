@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import { useEffect } from "react";
 
 const Navbar = () => {
-
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js"); // Import Bootstrap JS only on client
   }, []);
@@ -17,7 +16,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container responsive-container">
         <Link className="navbar-brand" href="/">
-          <Image src={Logo} alt="Logo" className="main-logo"/>
+          <Image src={Logo} alt="Logo" className="main-logo" />
         </Link>
         <button
           className="navbar-toggler"
@@ -68,28 +67,100 @@ const Navbar = () => {
             Contact Us
           </Link>
 
-
           {/* /////////// Links To GET In Sitemap /////////////// */}
           <div style={{ display: "none" }}>
-          <Link className="nav-link text-dark" href="/services/it-service" >it-service</Link>
-          <Link className="nav-link text-dark" href="/services/it-service/cyber-security" >cybersecurity</Link>
-          <Link className="nav-link text-dark" href="/services/it-service/cloud-computing" >cloud-computing</Link>
-          <Link className="nav-link text-dark" href="/services/it-service/network-infrastructure" >network-infrastructure</Link>
-          <Link className="nav-link text-dark" href="/services/it-service/software-development" >software-development</Link>
-          <Link className="nav-link text-dark" href="/services/it-service/data-management" >data-management</Link>
-          <Link className="nav-link text-dark" href="/services/it-service/business-intelligence" >business-intelligence</Link>
-          <Link className="nav-link text-dark" href="/services/it-service/it-consulting" >it-consulting</Link>
-          <Link className="nav-link text-dark" href="/services/rental-service" >rental-service</Link>
-          <Link className="nav-link text-dark" href="/services/digital-marketing" >digital-marketing</Link>
-          <Link className="nav-link text-dark" href="/services/telecom-solutions" >telecom-solutions</Link>
-          <Link className="nav-link text-dark" href="/services/annual-maintenance-contract" >annual-maintenance-contract</Link>
-          <Link className="nav-link text-dark" href="/services/network-solutions" >network-solutions</Link>
-          <Link className="nav-link text-dark" href="/services/website-development" >website-development</Link>
-          <Link className="nav-link text-dark" href="/services/app-development" >app-development</Link>
-          <Link className="nav-link text-dark" href="/services/branding" >branding</Link>
+            <Link className="nav-link text-dark" href="/services/it-service">
+              IT Services
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/it-service/cyber-security"
+            >
+              Cybersecurity Solutions
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/it-service/cloud-computing"
+            >
+              Cloud Computing Services
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/it-service/network-infrastructure"
+            >
+              Network Infrastructure Setup
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/it-service/software-development"
+            >
+              Custom Software Development
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/it-service/data-management"
+            >
+              Data Management Solutions
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/it-service/business-intelligence"
+            >
+              Business Intelligence Tools
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/it-service/it-consulting"
+            >
+              IT Consulting Services
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/rental-service"
+            >
+              IT Equipment Rental Services
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/digital-marketing"
+            >
+              Digital Marketing Solutions
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/telecom-solutions"
+            >
+              Telecom Solutions
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/annual-maintenance-contract"
+            >
+              Annual Maintenance Contracts
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/network-solutions"
+            >
+              Enterprise Network Solutions
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/website-development"
+            >
+              Website Development Services
+            </Link>
+            <Link
+              className="nav-link text-dark"
+              href="/services/app-development"
+            >
+              Mobile App Development
+            </Link>
+            <Link className="nav-link text-dark" href="/services/branding">
+              Branding & Design Services
+            </Link>
           </div>
           {/* /////////// //////////////////////// /////////////// */}
-
         </div>
       </div>
     </nav>
