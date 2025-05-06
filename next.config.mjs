@@ -4,13 +4,18 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'businessfirms.co',
+        protocol: "https",
+        hostname: "businessfirms.co",
       },
       {
-        protocol: 'https',
-        hostname: 'www.itsolutions4u.co',
+        protocol: "https",
+        hostname: "www.itsolutions4u.co",
       },
+      {
+        protocol: "https",
+        hostname: "darkred-pheasant-811225.hostingersite.com",
+      },
+
     ],
   },
   async rewrites() {

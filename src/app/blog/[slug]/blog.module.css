@@ -58,4 +58,10 @@
     margin: 1rem 0;
     border-radius: 8px;
   }
+
+  .featuredImage {
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    object-fit: cover;
+  }
   

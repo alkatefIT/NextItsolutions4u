@@ -311,6 +311,18 @@
     gap: 24px;
     padding: 2rem;
 }
+@media screen and (min-width: 900px) {
+    .blog-content-section {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .blog-content-section {
+        padding: .5rem;
+    }
+    
+}
 
 .blog-card {
     background: #fff;
@@ -320,7 +332,7 @@
     cursor: pointer;
     transition: transform 0.2s ease;
 
-    height: 350px;
+    height: 500px;
     /* Adjust as needed */
     display: flex;
     flex-direction: column;

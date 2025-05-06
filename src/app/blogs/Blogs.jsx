@@ -64,7 +64,6 @@
 // }
 
 ////////////////slug code//////////////////
-
 "use client";
 
 import { useRouter } from "next/navigation";
@@ -82,7 +81,7 @@ export default function Blogs() {
     const fetchPosts = async () => {
       try {
         const res = await fetch(
-          "https://darkred-pheasant-811225.hostingersite.com/wp-json/wp/v2/posts"
+          "https://darkred-pheasant-811225.hostingersite.com/wp-json/wp/v2/posts?_embed"
         );
 
         const text = await res.text();
