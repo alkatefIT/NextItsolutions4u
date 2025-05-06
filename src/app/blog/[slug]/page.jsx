@@ -19,8 +19,7 @@ export default async function BlogPost({ params }) {
   }
 
   const post = posts[0];
-  const imageUrl =
-    post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""; // Extract featured image URL
+  const imageUrl = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""; // Extract featured image URL
 
   return (
     <div className={styles.container}>
@@ -33,8 +32,8 @@ export default async function BlogPost({ params }) {
           src={imageUrl}
           alt={post.title.rendered}
           width={800}
-          height={400}
-          className={styles.featuredImage} // Add a CSS class for styling
+          height={400} // Set the desired width
+          className={styles.featuredImage}
         />
       )}
 
